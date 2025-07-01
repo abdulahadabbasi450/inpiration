@@ -129,6 +129,7 @@ body {
   position: relative;
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   overflow: hidden;
+  padding-top: 100px; /* Add padding to account for fixed navbar */
 }
 
 .hero-background {
@@ -148,6 +149,7 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
+  padding: 2rem 0; /* Add vertical padding for better spacing */
 }
 
 .hero-text {
@@ -827,6 +829,10 @@ body {
     left: 0;
   }
 
+  .hero {
+    padding-top: 120px; /* Increase padding on mobile for better spacing */
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -861,6 +867,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 140px; /* Even more padding on smaller screens */
+  }
+
   .hero-title {
     font-size: 2rem;
   }
