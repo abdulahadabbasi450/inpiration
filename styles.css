@@ -412,6 +412,126 @@ body {
   flex-wrap: wrap;
 }
 
+/* Bulk Discount Section */
+.bulk-discount {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.discount-banner {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.discount-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.discount-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.discount-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.discount-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.discount-text p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.discount-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discount-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.discount-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.discount-value {
+  color: white;
+  font-weight: 600;
+}
+
+.discount-value.highlight {
+  color: #fbbf24;
+  font-size: 1.1rem;
+}
+
+.discount-value.savings {
+  color: #fbbf24;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.discount-cta {
+  text-align: center;
+}
+
+.btn-discount {
+  background: white;
+  color: #059669;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.btn-discount:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: #f9fafb;
+}
+
+.discount-note {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
 /* Gallery Section */
 .gallery {
   padding: 6rem 0;
@@ -819,6 +939,20 @@ body {
   color: #e2e8f0;
 }
 
+.bulk-offer-note {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.bulk-offer-note p {
+  color: #10b981;
+  margin: 0;
+  font-weight: 500;
+}
+
 .modal-actions {
   display: flex;
   gap: 1rem;
@@ -884,6 +1018,22 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
+  }
+
+  .discount-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .discount-details {
+    align-items: center;
+  }
+
+  .discount-item {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .pricing-cta {
@@ -975,6 +1125,19 @@ body {
 
   .pricing-cta {
     flex-direction: column;
+  }
+
+  .discount-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .discount-text p {
+    font-size: 1rem;
+  }
+
+  .btn-discount {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
 }
 

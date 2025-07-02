@@ -74,6 +74,7 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
   const formData = new FormData(this);
   const name = formData.get('name');
   const phone = formData.get('phone');
+  const quantity = formData.get('quantity');
   const area = formData.get('area');
   const message = formData.get('message');
   
@@ -81,8 +82,15 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
   let whatsappMessage = `Hello! I'd like to order Anti seepage UM30 AS waterproofing solution.\n\n`;
   whatsappMessage += `Name: ${name}\n`;
   whatsappMessage += `Phone: ${phone}\n`;
+  if (quantity) whatsappMessage += `Quantity: ${quantity} units\n`;
   if (area) whatsappMessage += `Coverage Area: ${area} sq ft\n`;
   if (message) whatsappMessage += `Additional Details: ${message}\n`;
+  
+  // Add bulk discount note if quantity is 100 or more
+  if (quantity && parseInt(quantity) >= 100) {
+    whatsappMessage += `\n💰 I'm interested in the bulk discount offer (10% OFF for 100+ units).\n`;
+  }
+  
   whatsappMessage += `\nPlease provide pricing and availability information.`;
   
   // Encode message for URL
