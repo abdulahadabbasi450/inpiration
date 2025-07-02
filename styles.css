@@ -375,6 +375,8 @@ body {
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background: #1e293b;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .video-container video {
@@ -864,6 +866,10 @@ body {
   .section-header h2 {
     font-size: 2rem;
   }
+
+  .video-container {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -899,6 +905,10 @@ body {
 
   .contact-info h2 {
     font-size: 1.75rem;
+  }
+
+  .video-container {
+    max-width: 250px;
   }
 }
 
