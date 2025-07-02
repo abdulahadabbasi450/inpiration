@@ -197,22 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Video lazy loading
-document.addEventListener('DOMContentLoaded', () => {
-  const video = document.querySelector('video');
-  if (video) {
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          video.load();
-          videoObserver.unobserve(video);
-        }
-      });
-    });
-    videoObserver.observe(video);
-  }
-});
-
 // Gallery image lazy loading
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img[loading="lazy"]');
