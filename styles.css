@@ -321,10 +321,101 @@ body {
   line-height: 1.6;
 }
 
+/* Pricing Section */
+.pricing {
+  padding: 6rem 0;
+  background: #0f172a;
+}
+
+.pricing-content {
+  display: flex;
+  justify-content: center;
+}
+
+.product-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 900px;
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid #334155;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-details h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+}
+
+.product-subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.product-features {
+  margin-bottom: 2.5rem;
+}
+
+.product-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #e2e8f0;
+}
+
+.feature-check {
+  color: #10b981;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.pricing-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 /* Demo Section */
 .demo-section {
   padding: 6rem 0;
-  background: #0f172a;
+  background: #1e293b;
 }
 
 .demo-content {
@@ -389,7 +480,7 @@ body {
 /* Gallery Section */
 .gallery {
   padding: 6rem 0;
-  background: #1e293b;
+  background: #0f172a;
 }
 
 .gallery-grid {
@@ -454,7 +545,7 @@ body {
 /* Reviews Section */
 .reviews {
   padding: 6rem 0;
-  background: #0f172a;
+  background: #1e293b;
 }
 
 .reviews-grid {
@@ -464,12 +555,12 @@ body {
 }
 
 .review-card {
-  background: #1e293b;
+  background: #334155;
   padding: 2rem;
   border-radius: 12px;
   border-left: 4px solid #3b82f6;
   transition: all 0.3s ease;
-  border: 1px solid #334155;
+  border: 1px solid #475569;
 }
 
 .review-card:hover {
@@ -839,6 +930,16 @@ body {
     font-size: 2.5rem;
   }
 
+  .product-showcase {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .pricing-cta {
+    justify-content: center;
+  }
+
   .demo-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -905,6 +1006,22 @@ body {
 
   .contact-info h2 {
     font-size: 1.75rem;
+  }
+
+  .product-showcase {
+    padding: 1.5rem;
+  }
+
+  .product-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 2.5rem;
+  }
+
+  .pricing-cta {
+    flex-direction: column;
   }
 
   .video-container {
