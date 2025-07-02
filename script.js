@@ -78,7 +78,7 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
   const message = formData.get('message');
   
   // Create WhatsApp message
-  let whatsappMessage = `Hello! I'd like to order AntiSeep waterproofing solution.\n\n`;
+  let whatsappMessage = `Hello! I'd like to order Anti seepage UM30 AS waterproofing solution.\n\n`;
   whatsappMessage += `Name: ${name}\n`;
   whatsappMessage += `Phone: ${phone}\n`;
   if (area) whatsappMessage += `Coverage Area: ${area} sq ft\n`;
