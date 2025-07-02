@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "live-server",
-    "start": "live-server"
+    "start": "live-server",
+    "build": "echo 'Static site build: Files are ready for deployment in the root directory.'"
   },
   "keywords": [
     "waterproofing",
